@@ -40,7 +40,7 @@ void setup() {
   delay(10);
   digitalWrite(RST_LoRa, HIGH);
   LoRa.setPins(SS_LoRa, RST_LoRa, DI0);
-  if (!LoRa.begin(915E6)) {
+  if (!LoRa.begin(433E6)) {
     Serial.println("LoRa initialization failed!");
     return;
   }
